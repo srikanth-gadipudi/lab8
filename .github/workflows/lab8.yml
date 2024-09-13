@@ -9,6 +9,7 @@ on:
 jobs:
   commands_job:
     runs-on: ubuntu-latest
+    container: python:3.8
     steps:
       - name: Set environment variable with "key" as "foo" and "value" as "bar" 
         run: echo "foo=bar" >> $GITHUB_ENV
